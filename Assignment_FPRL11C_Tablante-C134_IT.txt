@@ -1,0 +1,174 @@
+I. Counter - controlled loop
+  Structure 
+    for (counter = start; counter <= end; counter++) {
+    // statements
+    }
+  Example 1 to 5
+    1. Print numbers 1 to 10
+	    for (int i = 1; i <= 10; i++) {
+    printf("%d ", i);
+    }
+    
+    2. Print even numbers from 2 to 20
+	    for (int i = 2; i <= 20; i += 2) {
+    printf("%d ", i);
+    }
+   
+    3. Sum of first 5 numbers
+        int sum = 0;
+        for (int i = 1; i <= 5; i++) {
+            sum += i;
+    }
+
+    4. Print a multiplication table of 7
+        for (int i = 1; i <= 10; i++) {
+        printf("7 x %d = %d\n", i, 7*i);
+    }
+
+    5. Print countdown from 10 to 1
+        for (int i = 10; i >= 1; i--) {
+        printf("%d ", i);
+    }
+
+II. Sentinel-controlled loop
+   Structure
+        while (input != sentinel_value) {
+        // statements
+    }
+    Example 1 to 5 
+    1. Enter numbers until user enters -1
+        int num;
+        scanf("%d", &num);
+        while (num != -1) {
+            printf("You entered: %d\n", num);
+            scanf("%d", &num);
+    }
+    2. Read characters until q is entered
+        char c;
+        scanf(" %c", &c);
+        while (c != 'q') {
+            printf("Char: %c\n", c);
+            scanf(" %c", &c);
+    }
+    3. Add numbers until 0 is entered
+        int num, sum = 0;
+        scanf("%d", &num);
+        while (num != 0) {
+            sum += num;
+            scanf("%d", &num);
+    }
+    4. Input passwords until "exit" is typed
+        char pass[20];
+        scanf("%s", pass);
+        while (strcmp(pass, "exit") != 0) {
+            printf("Try again\n");
+            scanf("%s", pass);
+    }
+    5. Process sales until -99 is entered
+        float sale;
+        scanf("%f", &sale);
+        while (sale != -99) {
+            printf("Recorded: %.2f\n", sale);
+            scanf("%f", &sale);
+    }
+III. For loop
+   Structure
+        for (init; condition; update) {
+        // statements
+    }
+    Examples 1 to 5
+    1. Print first 5 odd numbers
+        for (int i = 1; i <= 9; i += 2) {
+        printf("%d ", i);
+    }
+	2. Calculate factorial of 5
+        int fact = 1;
+		for (int i = 1; i <= 5; i++) {
+            fact *= i;
+	}
+    3. Print alphabets A to Z
+        for (char c = 'A'; c <= 'Z'; c++) {
+        printf("%c ", c);
+    }
+    4. Print squares of 1 to 10
+        for (int i = 1; i <= 10; i++) {
+        printf("%d^2 = %d\n", i, i*i);
+    }
+    5. Print stars in a line
+        for (int i = 1; i <= 5; i++) {
+        printf("*");
+    }
+IV. While loop
+   Structure
+        while (condition) {
+        // statements
+    }
+    Examples 1 to 5
+    1. Print numbers 1 to 5
+        int i = 1;
+        while (i <= 5) {
+            printf("%d ", i);
+            i++;
+    }
+    2. Print multiplication table of 3
+	    int i = 1;
+        while (i <= 10) {
+            printf("3 x %d = %d\n", i, 3*i);
+            i++;
+    }
+    3. Print sum of even numbers up to 20
+        int i = 2, sum = 0;
+        while (i <= 20) {
+            sum += i;
+            i += 2;
+    }
+    4. Countdown from 5
+        int i = 5;
+		while (i >= 1) {
+            printf("%d ", i);
+            i--;
+    }
+
+
+    5. Print stars in a line (5 stars)
+        int i = 1;
+		while (i <= 5) {
+            printf("*");
+            i++;
+    }
+V. Do-while loop
+  Structure
+        do {
+            // statements
+        } while (condition);
+    Examples 1 to 5
+	1. Print numbers 1 to 5
+        int i = 1;
+        do {
+            printf("%d ", i);
+            i++;
+        } while (i <= 5);
+    2. Keep asking until password = 1234
+        int pass;
+        do {
+            printf("Enter password: ");
+            scanf("%d", &pass);
+        } while (pass != 1234);
+    3. Print menu until exit selected
+        int choice;
+        do {
+            printf("1. Start\n2. Exit\n");
+            scanf("%d", &choice);
+        } while (choice != 2);
+    4. Sum numbers until 0 entered
+        int num, sum = 0;
+        do {
+            scanf("%d", &num);
+            sum += num;
+        } while (num != 0);
+    5. Print alphabet from A to E
+        char c = 'A';
+        do {
+            printf("%c ", c);
+            c++;
+        } while (c <= 'E');
